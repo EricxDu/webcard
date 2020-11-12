@@ -1,0 +1,125 @@
+html {
+    background-color: Black;
+    background-image:url(sq-repeat.gif);
+    max-width: 60em;
+    margin: auto;
+}
+
+body {
+    color:white;
+    background-color:black;
+    font:normal 100% Verdana, Geneva, sans-serif;
+    margin: 0.5em;
+    padding: 0.5em;
+    align: center;
+}
+
+p {
+    max-width: 36em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+hr {
+    clear: both;
+}
+
+/*div {padding:3px; background-color:black; border-width:1px; 
+border-style:dashed; border-color:DimGrey;}*/
+
+ul.horizontal {list-style-type:none; margin:0; padding:0;}
+ul.horizontal li {float:left; text-align:center;}
+ul.horizontal li a {display:block; width:150px;}
+
+a:link {color:CornFlowerBlue; text-decoration:none}
+a:visited {color:Plum; text-decoration:none;}
+a:hover {text-decoration:underline;} 
+
+/* Galleries are collections of block elements that float left. Each
+   block contains a small picture or text. */
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dashed DimGrey;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border: 1px solid #0000ff;
+}
+
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}
+
+#favquotes {width:auto; background-color:black; margin:0; padding:0;}
+#favquotes div blockquote {width:240px; font-size:125%; margin:0;}
+#favquotes div blockquote p {display:inline;}
+#favquotes div blockquote p:before {content:open-quote; float:left; width:0.7em; font-size:400%; line-height:80%;}
+#favquotes div blockquote p:after {content:close-quote;}
+#favquotes div blockquote div {font-size:80%; border:none;}
+#favquotes div blockquote div:before {content:" — "; width:0.7em;}
+
+dl.details dt {margin-right:6px; float:left;}
+dl.details dl dt {margin-right:10px; float:left; font-weight:bold;}
+
+ul.actions {list-style-type:none; margin:0; padding:0;}
+ul.actions li {float:left; text-align:center; margin:3px;}
+ul.actions li ul {list-style-type:none; margin:0; padding:0;}
+ul.actions li ul li {clear:left; width:180px; text-align:center; padding:5px; border:1px dashed DimGrey;}
+
+/*div.gallery {margin:9px; padding:3px; float:left; text-align:center;}*/
+a.gallery {margin:9px; padding:3px; float:left; text-align:center; border:1px dotted DimGrey;}
+
+#mainMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: DarkBlue;
+}
+
+#mainMenu li {
+    float: left;
+    width: 25%;
+}
+
+#mainMenu li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#mainMenu li a:hover {
+    background-color: black;
+}
+
+.gallery div {
+    float: left;
+    padding: 1em;
+    max-width: 28em;
+}
+
+.gallery div ul {
+    padding: 0.1em;
+    list-style-position: outside;
+}
+
+.gallery div ul li {
+    padding: 0.1em;
+}
